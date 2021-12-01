@@ -1,0 +1,98 @@
+<div class="home">
+  <div class="navbar navbar-inverse navbar-fixed-top headroom" >
+      <div class="container">
+          <div class="navbar-header">
+              <!-- Button for smallest screens -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+          </div>
+          <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a routerLink="home" routerLinkActive="active" class="nav-link">Accueil</a></li>
+                <li><a routerLink="list-vouchers" routerLinkActive="active" class="nav-link">Vouchers</a></li>
+                <li><a routerLink="list-category" routerLinkActive="active" class="nav-link">Categories</a></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </div>
+  </div> 
+  </div>
+  
+  <!--
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class = "navbar-nav">
+          <li class = "nav-item">
+              <a routerLink="home" routerLinkActive="active" class="nav-link" >Page d'accueil </a>
+          </li>
+          <li class = "nav-item">
+              <a routerLink="vouchers" routerLinkActive="active" class="nav-link" >Liste de Vouchers</a>
+          </li>
+          <li class = "nav-item">
+              <a routerLink="add-voucher" routerLinkActive="active" class="nav-link" >Ajouter Voucher</a>
+          </li> 
+          <li class = "nav-item">
+              <a routerLink="admin-register" routerLinkActive="active" class="nav-link" >Inscrire Admin</a>
+          </li> 
+      </ul>
+  </nav>
+  -->
+  <router-outlet></router-outlet>
+
+  
+  <footer id="footer" class="footer">
+  
+      <div class="footer1">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-3 widget">
+              <h3 class="widget-title">Contact Developper</h3>
+              <div class="widget-body">
+                <p>+216 55 706 653<br>
+                  <a href="mailto:#">medfarouk55@gmail.com</a><br>
+                  <br>
+                  Rue riadh tataouine , 3200
+                </p>	
+              </div>
+            </div>
+  
+            
+  
+            <div class="col-md-6 widget">
+              <h3 class="widget-title">Information sur cette application</h3>
+              <div class="widget-body">
+                <p> application simple de gestion de voucher. </p>
+                
+              </div>
+            </div>
+  
+                      
+          </div> <!-- /row of widgets -->
+        </div>
+      </div>
+  
+      <div class="footer2">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-6 widget">
+              <div class="widget-body">
+                <p class="simplenav">
+                  <a routerLink="home" routerLinkActive="active">Accueil</a> | 
+                  <b><a routerLink="admin-register" routerLinkActive="active">Sign up</a></b>
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 widget">
+              <div class="widget-body">
+                <p class="text-right">
+                  Copyright &copy; 2014, @MedFarouk. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a> 
+                </p>
+              </div>
+            </div>
+  
+          </div> <!-- /row of widgets -->
+        </div>
+      </div>
+  
+    </footer>	

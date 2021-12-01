@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        
+        <!-- Voucher main content -->
+        <article class="col-xs-12 maincontent">
+            <header class="page-header">
+                <h1 class="page-title">Ajouter</h1>
+            </header>
+            
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="thin text-center">Ajouter un nouveau voucher :</h3>
+                        <hr>
+
+                        <form (ngSubmit) = "onSubmit()">
+    
+                            <div class=" top-margin">
+                                <label> Titre </label>
+                                <input type="text" class ="form-control" id = "titre"
+                                    [(ngModel)] = "voucher.titre" name = "titre">
+                            </div>
+                        
+                            <div class="top-margin">
+                                <label>Code Voucher </label>
+                                <input type="text" class ="form-control" placeholder="le code Voucher est autogenerer :) " disabled>
+                            </div>
+                        
+                            <div class="top-margin">
+                                <label> Prix Voucher </label>
+                                <input type="text" class ="form-control" id = "prixVoucher"
+                                    [(ngModel)] = "voucher.prixVoucher" name = "prixVoucher">
+                            </div>
+                    
+                            <div class="top-margin">
+                                <label> Description Voucher </label>
+                                <input type="text" class ="form-control" id = "descVoucher"
+                                    [(ngModel)] = "voucher.descVoucher" name = "descVoucher">
+                            </div>
+                    
+                            <div class="top-margin">
+                                <label> Date expiration </label>
+                                <input type="date" class ="form-control" id = "dateExp"
+                                    [(ngModel)] = "voucher.dateExp" name = "dateExp">
+                            </div>
+
+                            <div class="top-margin">
+                            <select id = "idCat" [(ngModel)] = "voucher.idCat" name = "idCat">
+                                <option *ngFor = "let cat of categories" [value]="cat.idCat" >{{cat.nomCat}}</option>
+                            </select>
+                            </div>
+
+                            <hr>
+                            <div class="row">
+                                <div class="buttonMD">
+                                    <button class="btn btn-warning" type="submit">Enregistrer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- /Voucher -->
+    </div>
+</div>	

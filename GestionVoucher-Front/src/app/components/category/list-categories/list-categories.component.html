@@ -1,0 +1,36 @@
+<div class="jumbotron top-space">
+    <div class="container">
+    <h2>Liste de categories :</h2>
+    <div class="text-center">
+    <h3 *ngIf="categories.length == 0"> le table est vide !  
+    <button (click)="addCategory()" class="btn btn-info"> Ajouter </button> </h3>
+    </div>
+    <table class="table table-striped table-md" *ngIf="categories.length > 0">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let cat of categories">
+            <td>{{cat.idCat}}</td>
+            <td>{{cat.nomCat}}</td>
+            <td>{{cat.description}}</td>
+            <td>
+                <button (click)="updateCategory(cat.idCat)" class="btn btn-info"> Modifier </button>
+                <button (click)="deleteCategory(cat.idCat)" class="btn btn-danger"> Supp. </button>
+                <button (click)="showCategory(cat.idCat)" class="btn btn-warning"> Aff. </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttonMD" *ngIf="categories.length > 0">
+        <button (click)="addCategory()" class="btn btn-success"> Ajouter </button>
+    </div>
+    </div>
+    </div>
+    
+    

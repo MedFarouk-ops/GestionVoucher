@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        
+        <!-- Categorie main content -->
+        <article class="col-xs-12 maincontent">
+            <header class="page-header">
+                <h1 class="page-title">Ajouter</h1>
+            </header>
+            
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="thin text-center">Ajouter une nouvelle categorie :</h3>
+                        <hr>
+
+                        <form (ngSubmit) = "onSubmit()">
+    
+                            <div class=" top-margin">
+                                <label> Nom de categorie : </label>
+                                <input type="text" class ="form-control" id = "nomCat"
+                                    [(ngModel)] = "cat.nomCat" name = "nomCat">
+                            </div>
+
+                            <div class="top-margin">
+                                <label> Description Categorie : </label>
+                                <input type="text" class ="form-control" id = "description"
+                                    [(ngModel)] = "cat.description" name = "description">
+                            </div>
+                    
+                            <hr>
+                            <div class="row">
+                                <div class="buttonMD">
+                                    <button class="btn btn-success" type="submit">Enregistrer</button>
+                                </div>
+                            </div>
+                        
+                        
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+        </article>
+        <!-- /Voucher -->
+
+    </div>
+</div>	
